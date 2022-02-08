@@ -13,11 +13,8 @@ public class TheGame extends javax.swing.JFrame {
     /**
      * Creates new form NewJFrame
      */
-    
     public TheGame() {
         initComponents();
-        setSize(5500,5500);
-        setLocation(50,30);
     }
 
     /**
@@ -29,7 +26,6 @@ public class TheGame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        hatter = new javax.swing.JLabel();
         fember = new javax.swing.JLabel();
         aember = new javax.swing.JLabel();
         alja = new javax.swing.JLabel();
@@ -45,18 +41,10 @@ public class TheGame extends javax.swing.JFrame {
         valasz3 = new javax.swing.JTextField();
         kerdes4 = new javax.swing.JLabel();
         valasz4 = new javax.swing.JTextField();
+        hatter = new javax.swing.JLabel();
         jLab_W = new javax.swing.JLabel();
 
-        hatter.setBackground(new java.awt.Color(89, 64, 64));
-        hatter.setForeground(new java.awt.Color(97, 75, 75));
-        hatter.setText("jLabel1");
-        hatter.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
-        hatter.setMaximumSize(new java.awt.Dimension(1000, 1000));
-        hatter.setMinimumSize(new java.awt.Dimension(1000, 1000));
-        hatter.setPreferredSize(new java.awt.Dimension(1000, 1000));
-
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setBackground(new java.awt.Color(119, 83, 83));
         addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowOpened(java.awt.event.WindowEvent evt) {
                 formWindowOpened(evt);
@@ -66,11 +54,11 @@ public class TheGame extends javax.swing.JFrame {
 
         fember.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hangmangame/Felakasztot_ember_KICSIKE.png"))); // NOI18N
         getContentPane().add(fember);
-        fember.setBounds(300, 200, 190, 430);
+        fember.setBounds(310, 230, 190, 430);
 
         aember.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hangmangame/emberke.png"))); // NOI18N
         getContentPane().add(aember);
-        aember.setBounds(280, 360, 170, 325);
+        aember.setBounds(310, 360, 170, 325);
 
         alja.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hangmangame/akasztofa_alj.png"))); // NOI18N
         alja.setText("jLabel1");
@@ -90,10 +78,11 @@ public class TheGame extends javax.swing.JFrame {
         bember.setBounds(480, 340, 230, 390);
 
         gomba1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hangmangame/gomba1.png"))); // NOI18N
+        gomba1.setText("jLabel1");
         getContentPane().add(gomba1);
         gomba1.setBounds(-240, -50, 580, 760);
 
-        kerdes1.setText("KÉRDÉS");
+        kerdes1.setText("hhhqaewsrdtftgzhuoip");
         getContentPane().add(kerdes1);
         kerdes1.setBounds(1000, 140, 300, 16);
 
@@ -105,11 +94,11 @@ public class TheGame extends javax.swing.JFrame {
             }
         });
         getContentPane().add(valasz1);
-        valasz1.setBounds(1000, 170, 280, 40);
+        valasz1.setBounds(990, 200, 270, 30);
 
-        kerdes2.setText("KÉRDÉS");
+        kerdes2.setText("Q2");
         getContentPane().add(kerdes2);
-        kerdes2.setBounds(1000, 220, 260, 30);
+        kerdes2.setBounds(1000, 290, 15, 16);
 
         valasz2.setBackground(new java.awt.Color(255, 255, 102));
         valasz2.addActionListener(new java.awt.event.ActionListener() {
@@ -118,11 +107,11 @@ public class TheGame extends javax.swing.JFrame {
             }
         });
         getContentPane().add(valasz2);
-        valasz2.setBounds(1000, 250, 280, 40);
+        valasz2.setBounds(990, 320, 280, 22);
 
-        kerdes3.setText("KÉRDÉS");
+        kerdes3.setText("Q3");
         getContentPane().add(kerdes3);
-        kerdes3.setBounds(1000, 310, 280, 16);
+        kerdes3.setBounds(1000, 370, 15, 16);
 
         valasz3.setBackground(new java.awt.Color(255, 255, 102));
         valasz3.addActionListener(new java.awt.event.ActionListener() {
@@ -131,20 +120,22 @@ public class TheGame extends javax.swing.JFrame {
             }
         });
         getContentPane().add(valasz3);
-        valasz3.setBounds(1000, 340, 280, 40);
+        valasz3.setBounds(990, 410, 290, 22);
 
-        kerdes4.setText("KÉRDÉS");
+        kerdes4.setText("Q4");
         getContentPane().add(kerdes4);
-        kerdes4.setBounds(1000, 390, 280, 16);
+        kerdes4.setBounds(1000, 480, 15, 16);
 
         valasz4.setBackground(new java.awt.Color(255, 204, 51));
-        valasz4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                valasz4ActionPerformed(evt);
-            }
-        });
         getContentPane().add(valasz4);
-        valasz4.setBounds(1000, 420, 280, 40);
+        valasz4.setBounds(990, 540, 300, 22);
+
+        hatter.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hangmangame/background.jpg"))); // NOI18N
+        hatter.setText("jLabel1");
+        hatter.setMaximumSize(new java.awt.Dimension(2000, 2000));
+        hatter.setMinimumSize(new java.awt.Dimension(2000, 2000));
+        getContentPane().add(hatter);
+        hatter.setBounds(-10, 0, 1360, 820);
 
         jLab_W.setText("jLabel1");
         getContentPane().add(jLab_W);
@@ -156,7 +147,7 @@ int w=0;
     private void valasz1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_valasz1ActionPerformed
         // TODO add your handling code here:
         String V1=valasz1.getText();
-        String Jvalasz1 = "a jó válasz"; //Nézd meg hogy miért veszi rossz válasznak
+        String Jvalasz1 = "a jó válasz";
         
         if( V1.equals(Jvalasz1)){
             jLab_W.setText(""+w);
@@ -212,7 +203,6 @@ int w=0;
         
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
         // TODO add your handling code here:
-        aember.setVisible(true);
         alja.setVisible(false);
         kozepe.setVisible(false);
         teteje.setVisible(false);
@@ -258,46 +248,13 @@ int w=0;
                 }
                 else if (w1==3){
                     teteje.setVisible(true);
-                    valasz4.setVisible(true);
-                    kerdes4.setVisible(true);
+                    //fember.setVisible(true);
                     valasz3.setEnabled(false);
                    
                 }
         
         }
     }//GEN-LAST:event_valasz3ActionPerformed
-
-    private void valasz4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_valasz4ActionPerformed
-        // TODO add your handling code here:
-        String V4=valasz4.getText();
-        String Jvalasz4 = "a jó válasz";
-        
-        int w1=Integer.parseInt(jLab_W.getText());
-        valasz3.setEnabled(false);
-        valasz4.setEnabled(false);
-        //Ha ezek már látaszódnak ha 3 rossz válasz volt akkor ezek jhelenítődnek meg
-        if(V4.equals(Jvalasz4)){
-           jLab_W.setText(""+w1);
-           alja.setVisible(true);
-           kozepe.setVisible(true);
-           teteje.setVisible(true);
-           aember.setVisible(false);
-           bember.setVisible(true);
-          
-           
-        }
-        //rosz válasznál ezek megjelnítődnek
-        else {
-           w1=w1+1;
-           jLab_W.setText(""+w1);
-           teteje.setVisible(true);
-           fember.setVisible(true);
-           aember.setVisible(false);
-        }
-       
-       
-       
-    }//GEN-LAST:event_valasz4ActionPerformed
 
     /**
      * @param args the command line arguments

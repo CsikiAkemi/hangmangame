@@ -17,8 +17,6 @@ public class login extends javax.swing.JFrame {
      */
     public login() {
         initComponents();
-        setSize(1500,1000);
-        setLocation(50,30);
     }
 
     /**
@@ -91,12 +89,10 @@ public class login extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        //Kapcsolódás az adatbázishoz
         String felhasznalo,jelszo;
-        felhasznalo=txtfelhasznalo.getText(); //emailes bejelentkezés szükséges 
+        felhasznalo=txtfelhasznalo.getText();
         jelszo=txtjelszo.getText();
-        //Egy vizsgálat hogy a megadott emailcim szerepel-e már aza datbázisban és ha igen akkor mikor játszott utoljára(mezőben lévő dátum vizsgálata )
-        if(felhasznalo.equals("1") && jelszo.equals("1")){
+        if(felhasznalo.equals("Teszt1") && jelszo.equals("teszt1234")){
             JOptionPane.showMessageDialog(null, "Sikeres bejelentkezés");
             
             TheGame g=new TheGame();

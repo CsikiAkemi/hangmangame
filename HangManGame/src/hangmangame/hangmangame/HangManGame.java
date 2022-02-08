@@ -17,7 +17,7 @@ public class HangManGame {
         // TODO code application logic here
         
                 new login().setVisible(true);
-                
+            
     }
     
 }
